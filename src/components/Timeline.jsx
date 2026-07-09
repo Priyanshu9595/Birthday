@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { MessageCircleHeart, Coffee, Sparkles, Heart } from "lucide-react";
 
 const events = [
-  { icon: MessageCircleHeart, title: "First Conversation", desc: "The day everything changed.", date: "That special day" },
+  { icon: MessageCircleHeart, title: "First Conversation", desc: "The day everything changed.", date: "28 Dec 2022" },
   { icon: Coffee, title: "First Date", desc: "Nervous smiles and endless talking.", date: "A night to remember" },
   { icon: Sparkles, title: "Best Memories", desc: "Every trip, every laugh, every moment.", date: "Always" },
   { icon: Heart, title: "Today", desc: "Celebrating the most amazing person.", date: "Happy Birthday!" },
