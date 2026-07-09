@@ -1,26 +1,30 @@
 "use client";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { Heart } from "lucide-react";
 
 export default function FloatingHearts() {
   const [hearts, setHearts] = useState([]);
 
   useEffect(() => {
-    const createHeart = () => {
-      const id = Date.now();
-      const left = Math.random() * 100;
-      const size = Math.random() * 20 + 10;
-      const duration = Math.random() * 5 + 10;
-
-      setHearts((prev) => [...prev, { id, left, size, duration }]);
-
+    // Generate a new heart more frequently to fill the background
+    const interval = setInterval(() => {
+      const newHeart = {
+        id: Date.now() + Math.random(), // ensure unique ID
+        left: Math.random() * 100, // Random horizontal position 0-100%
+        size: Math.random() * 1.5 + 0.5, // Random scale 0.5 - 2.0
+        duration: Math.random() * 10 + 10, // Float duration 10s - 20s
+        emoji: ["💕", "😘"][Math.floor(Math.random() * 2)],
+      };
+      
+      setHearts(prev => [...prev, newHeart]);
+      
+      // Remove hearts after 25s to prevent DOM clutter
       setTimeout(() => {
-        setHearts((prev) => prev.filter((h) => h.id !== id));
-      }, duration * 1000);
-    };
-
-    const interval = setInterval(createHeart, 2000);
+        setHearts(prev => prev.filter(h => h.id !== newHeart.id));
+      }, 25000);
+      
+    }, 600); // spawned every 0.6 seconds instead of 2 seconds
+    
     return () => clearInterval(interval);
   }, []);
 
@@ -30,12 +34,12 @@ export default function FloatingHearts() {
         <motion.div
           key={heart.id}
           initial={{ opacity: 0, y: "100vh", x: `${heart.left}vw` }}
-          animate={{ opacity: [0, 0.5, 0], y: "-10vh" }}
+          animate={{ opacity: [0, 0.8, 0.8, 0], y: "-10vh" }}
           transition={{ duration: heart.duration, ease: "linear" }}
-          className="absolute text-primary-pink/30"
-          style={{ width: heart.size, height: heart.size }}
+          className="absolute text-3xl md:text-5xl drop-shadow-md"
+          style={{ transform: `scale(${heart.size})` }}
         >
-          <Heart fill="currentColor" />
+          {heart.emoji}
         </motion.div>
       ))}
     </div>
