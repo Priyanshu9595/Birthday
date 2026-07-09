@@ -29,9 +29,6 @@ export default function VideoGallery() {
               <video 
                 src={src} 
                 controls 
-                autoPlay 
-                muted 
-                loop 
                 playsInline
                 className="w-full h-full object-contain"
               />
