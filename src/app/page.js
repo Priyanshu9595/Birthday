@@ -1,7 +1,6 @@
 import Hero from "@/components/Hero";
 import HeartSlideshow from "@/components/HeartSlideshow";
-import Gallery from "@/components/Gallery";
-import VideoGallery from "@/components/VideoGallery";
+import CategorizedMemories from "@/components/CategorizedMemories";
 import Timeline from "@/components/Timeline";
 import LoveLetter from "@/components/LoveLetter";
 import Reasons from "@/components/Reasons";
@@ -12,8 +11,7 @@ export default function Home() {
     <main className="min-h-screen bg-romantic-dark">
       <Hero />
       <HeartSlideshow />
-      <Gallery />
-      <VideoGallery />
+      <CategorizedMemories />
       <Timeline />
       <LoveLetter />
       <Reasons />
