@@ -11,7 +11,7 @@ const events = [
 
 export default function Timeline() {
   return (
-    <section className="py-24 px-6 bg-gradient-to-b from-romantic-dark to-[#2a0e21] overflow-hidden">
+    <section className="py-24 px-6 bg-gradient-to-b from-romantic-dark to-[#FFE4E8] overflow-hidden">
       <h2 className="text-4xl md:text-6xl font-cursive text-center text-primary-pink mb-16">
         Our Story
       </h2>
@@ -36,14 +36,14 @@ export default function Timeline() {
                 {isLeft && (
                   <>
                     <span className="text-gold font-bold tracking-wider text-sm">{event.date}</span>
-                    <h3 className="text-2xl font-serif text-white mt-2">{event.title}</h3>
-                    <p className="text-lavender mt-2">{event.desc}</p>
+                    <h3 className="text-2xl font-serif text-[#4A0E4E] mt-2">{event.title}</h3>
+                    <p className="text-[#6B4E71] mt-2">{event.desc}</p>
                   </>
                 )}
               </div>
               
               {/* Icon */}
-              <div className="absolute left-10 md:left-1/2 transform -translate-x-1/2 w-12 h-12 bg-[#2a0e21] border-4 border-primary-pink rounded-full flex items-center justify-center z-10 shadow-[0_0_15px_rgba(255,79,129,0.5)]">
+              <div className="absolute left-10 md:left-1/2 transform -translate-x-1/2 w-12 h-12 bg-white border-4 border-primary-pink rounded-full flex items-center justify-center z-10 shadow-[0_0_15px_rgba(255,79,129,0.5)]">
                 <Icon size={20} className="text-primary-pink" />
               </div>
               
@@ -51,8 +51,8 @@ export default function Timeline() {
               <div className={`w-full pl-20 md:w-5/12 md:pl-8 text-left ${isLeft ? "md:opacity-0" : ""}`}>
                 <div className={isLeft ? "block md:hidden" : "block"}>
                   <span className="text-gold font-bold tracking-wider text-sm">{event.date}</span>
-                  <h3 className="text-2xl font-serif text-white mt-2">{event.title}</h3>
-                  <p className="text-lavender mt-2">{event.desc}</p>
+                  <h3 className="text-2xl font-serif text-[#4A0E4E] mt-2">{event.title}</h3>
+                  <p className="text-[#6B4E71] mt-2">{event.desc}</p>
                 </div>
               </div>
             </motion.div>

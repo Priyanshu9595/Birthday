@@ -30,9 +30,9 @@ export default function Reasons() {
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.4, delay: idx * 0.1 }}
             whileHover={{ scale: 1.05, y: -10 }}
-            className="bg-white/10 backdrop-blur-md border border-primary-pink/30 p-6 rounded-2xl shadow-lg w-full max-w-[280px] text-center flex items-center justify-center min-h-[120px] cursor-pointer"
+            className="bg-white/80 backdrop-blur-md border border-primary-pink/30 p-6 rounded-2xl shadow-lg w-full max-w-[280px] text-center flex items-center justify-center min-h-[120px] cursor-pointer"
           >
-            <p className="text-lg text-rose font-medium">{reason.text}</p>
+            <p className="text-lg text-[#4A0E4E] font-medium">{reason.text}</p>
           </motion.div>
         ))}
       </div>

@@ -27,12 +27,12 @@ export default function HeartSlideshow() {
   }, []);
 
   return (
-    <section className="py-24 px-6 bg-[#2a0e21] overflow-hidden flex flex-col items-center justify-center">
+    <section className="py-24 px-6 bg-white overflow-hidden flex flex-col items-center justify-center">
       <h2 className="text-4xl md:text-6xl font-cursive text-center text-primary-pink mb-16 drop-shadow-md">
         You Are In My Heart
       </h2>
       
-      <div className="relative w-full max-w-md md:max-w-lg aspect-[3/4] flex justify-center items-center mx-auto rounded-2xl shadow-[0_0_40px_rgba(255,79,129,0.3)] bg-black/40 overflow-hidden border-2 border-primary-pink/30">
+      <div className="relative w-full max-w-md md:max-w-lg aspect-[3/4] flex justify-center items-center mx-auto rounded-2xl shadow-[0_0_40px_rgba(255,79,129,0.3)] bg-white/60 overflow-hidden border-2 border-primary-pink/30">
         <AnimatePresence>
           <motion.img
             key={index}

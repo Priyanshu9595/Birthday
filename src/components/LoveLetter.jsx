@@ -20,7 +20,7 @@ export default function LoveLetter() {
           My Dearest Monika...
         </h2>
         
-        <div className="space-y-6 text-rose text-lg leading-relaxed font-light font-sans text-center">
+        <div className="space-y-6 text-[#4A0E4E] text-lg leading-relaxed font-light font-sans text-center">
           <motion.p
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}

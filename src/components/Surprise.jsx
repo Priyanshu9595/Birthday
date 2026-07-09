@@ -43,7 +43,7 @@ export default function Surprise() {
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
         onClick={triggerSurprise}
-        className="group relative px-8 py-4 bg-gradient-to-r from-primary-pink to-[#ff759f] rounded-full text-white text-xl font-bold shadow-[0_0_30px_rgba(255,79,129,0.6)] flex items-center gap-3 overflow-hidden"
+        className="group relative px-8 py-4 bg-gradient-to-r from-primary-pink to-[#ff759f] rounded-full text-[#4A0E4E] text-xl font-bold shadow-[0_0_30px_rgba(255,79,129,0.6)] flex items-center gap-3 overflow-hidden"
       >
         <div className="absolute inset-0 w-full h-full bg-white/20 -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]" />
         <Gift className="animate-bounce" />
@@ -66,11 +66,11 @@ export default function Surprise() {
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0.8, opacity: 0 }}
             transition={{ type: "spring", bounce: 0.5 }}
-            className="relative bg-white/10 backdrop-blur-md border border-primary-pink/30 rounded-3xl p-8 md:p-12 max-w-2xl w-full text-center shadow-[0_0_50px_rgba(255,79,129,0.3)] overflow-hidden"
+            className="relative bg-white/80 backdrop-blur-md border border-primary-pink/30 rounded-3xl p-8 md:p-12 max-w-2xl w-full text-center shadow-[0_0_50px_rgba(255,79,129,0.3)] overflow-hidden"
           >
               <button 
                 onClick={() => setIsOpen(false)}
-                className="absolute top-4 right-4 text-white/50 hover:text-white"
+                className="absolute top-4 right-4 text-[#4A0E4E]/50 hover:text-[#4A0E4E]"
               >
                 <X size={24} />
               </button>
@@ -78,7 +78,7 @@ export default function Surprise() {
               <h2 className="text-4xl md:text-6xl font-cursive text-primary-pink mb-6 drop-shadow-lg">
                 Happy Birthday, Monika ❤️
               </h2>
-              <p className="text-xl md:text-2xl text-rose leading-relaxed font-light">
+              <p className="text-xl md:text-2xl text-[#4A0E4E] leading-relaxed font-light">
                 Thank you for making my life brighter every single day. Every memory with you is a treasure, and I can't wait to create countless more together. I hope this year brings my cute Doraemon all the happiness you deserve. I love you today, tomorrow, and always. 💖
               </p>
             </motion.div>

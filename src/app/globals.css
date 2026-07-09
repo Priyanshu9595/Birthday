@@ -1,18 +1,18 @@
 @import "tailwindcss";
 
 :root {
-  --background: #110712; /* Dark romantic background */
-  --foreground: #FFF0F5; /* Lavender blush for text */
+  --background: #FFF5F7; /* Very light pink background */
+  --foreground: #4A0E4E; /* Dark plum text */
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-primary-pink: #FF4F81;
-  --color-lavender: #E6E6FA;
+  --color-lavender: #6B4E71;
   --color-gold: #FFD700;
-  --color-rose: #FFE4E1;
-  --color-romantic-dark: #110712;
+  --color-rose: #4A0E4E;
+  --color-romantic-dark: #FFF5F7;
   
   --font-sans: var(--font-inter);
   --font-cursive: var(--font-dancing-script);

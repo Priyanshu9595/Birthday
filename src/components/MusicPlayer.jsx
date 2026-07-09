@@ -26,7 +26,7 @@ export default function MusicPlayer() {
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.9 }}
       onClick={togglePlay}
-      className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-primary-pink text-white shadow-lg shadow-primary-pink/50 backdrop-blur-md"
+      className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-primary-pink text-[#4A0E4E] shadow-lg shadow-primary-pink/50 backdrop-blur-md"
     >
       {isPlaying ? <Pause size={24} /> : <Music size={24} />}
     </motion.button>

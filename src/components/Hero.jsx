@@ -47,7 +47,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative flex min-h-screen flex-col items-center justify-center text-center p-6 bg-gradient-to-b from-romantic-dark to-[#2a0e21]">
+    <section className="relative flex min-h-screen flex-col items-center justify-center text-center p-6 bg-gradient-to-b from-romantic-dark to-[#FFE4E8]">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -58,7 +58,7 @@ export default function Hero() {
           Happy Birthday, Monika ❤️
         </h1>
         <div className="h-24 px-4">
-          <p className="text-xl md:text-3xl font-sans text-rose font-light tracking-wide max-w-2xl mx-auto">
+          <p className="text-xl md:text-3xl font-sans text-[#4A0E4E] font-light tracking-wide max-w-2xl mx-auto">
             {text}
             <span className={`inline-block w-1 h-8 bg-primary-pink ml-1 ${isTyping ? "animate-pulse" : "hidden"}`}></span>
           </p>
@@ -73,26 +73,26 @@ export default function Hero() {
           {isMounted ? (
             timeLeft ? (
               <div className="flex flex-col items-center gap-4 w-full">
-                <span className="text-sm tracking-widest text-lavender uppercase mb-2">Countdown to 12th July</span>
-                <div className="flex gap-2 sm:gap-4 md:gap-8 text-white font-serif justify-center items-center">
+                <span className="text-sm tracking-widest text-[#6B4E71] uppercase mb-2">Countdown to 12th July</span>
+                <div className="flex gap-2 sm:gap-4 md:gap-8 text-[#4A0E4E] font-serif justify-center items-center">
                   <div className="flex flex-col items-center">
                     <span className="text-3xl sm:text-4xl md:text-6xl text-primary-pink">{timeLeft.days}</span>
-                    <span className="text-[10px] sm:text-xs text-rose mt-2 tracking-widest uppercase">Days</span>
+                    <span className="text-[10px] sm:text-xs text-[#4A0E4E] mt-2 tracking-widest uppercase">Days</span>
                   </div>
                   <span className="text-3xl sm:text-4xl md:text-6xl text-primary-pink/50 animate-pulse pb-4">:</span>
                   <div className="flex flex-col items-center">
                     <span className="text-3xl sm:text-4xl md:text-6xl text-primary-pink">{timeLeft.hours}</span>
-                    <span className="text-[10px] sm:text-xs text-rose mt-2 tracking-widest uppercase">Hours</span>
+                    <span className="text-[10px] sm:text-xs text-[#4A0E4E] mt-2 tracking-widest uppercase">Hours</span>
                   </div>
                   <span className="text-3xl sm:text-4xl md:text-6xl text-primary-pink/50 animate-pulse pb-4">:</span>
                   <div className="flex flex-col items-center">
                     <span className="text-3xl sm:text-4xl md:text-6xl text-primary-pink">{timeLeft.minutes}</span>
-                    <span className="text-[10px] sm:text-xs text-rose mt-2 tracking-widest uppercase">Mins</span>
+                    <span className="text-[10px] sm:text-xs text-[#4A0E4E] mt-2 tracking-widest uppercase">Mins</span>
                   </div>
                   <span className="text-3xl sm:text-4xl md:text-6xl text-primary-pink/50 animate-pulse pb-4">:</span>
                   <div className="flex flex-col items-center">
                     <span className="text-3xl sm:text-4xl md:text-6xl text-primary-pink">{timeLeft.seconds}</span>
-                    <span className="text-[10px] sm:text-xs text-rose mt-2 tracking-widest uppercase">Secs</span>
+                    <span className="text-[10px] sm:text-xs text-[#4A0E4E] mt-2 tracking-widest uppercase">Secs</span>
                   </div>
                 </div>
               </div>
@@ -103,7 +103,7 @@ export default function Hero() {
             )
           ) : (
              <div className="h-[120px] flex items-center justify-center">
-               <span className="text-sm text-lavender animate-pulse">Calculating time...</span>
+               <span className="text-sm text-[#6B4E71] animate-pulse">Calculating time...</span>
              </div>
           )}
         </motion.div>
