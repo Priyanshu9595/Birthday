@@ -1,4 +1,5 @@
 import Hero from "@/components/Hero";
+import HeartSlideshow from "@/components/HeartSlideshow";
 import Gallery from "@/components/Gallery";
 import VideoGallery from "@/components/VideoGallery";
 import Timeline from "@/components/Timeline";
@@ -10,6 +11,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-romantic-dark">
       <Hero />
+      <HeartSlideshow />
       <Gallery />
       <VideoGallery />
       <Timeline />
