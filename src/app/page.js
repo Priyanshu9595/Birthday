@@ -8,7 +8,7 @@ import Surprise from "@/components/Surprise";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-romantic-dark">
+    <main className="min-h-screen bg-romantic-dark overflow-x-hidden">
       <Hero />
       <HeartSlideshow />
       <CategorizedMemories />

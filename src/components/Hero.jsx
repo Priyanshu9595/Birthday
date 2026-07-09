@@ -72,27 +72,27 @@ export default function Hero() {
         >
           {isMounted ? (
             timeLeft ? (
-              <div className="flex flex-col items-center gap-4">
+              <div className="flex flex-col items-center gap-4 w-full">
                 <span className="text-sm tracking-widest text-lavender uppercase mb-2">Countdown to 12th July</span>
-                <div className="flex gap-3 md:gap-8 text-white font-serif">
+                <div className="flex gap-2 sm:gap-4 md:gap-8 text-white font-serif justify-center items-center">
                   <div className="flex flex-col items-center">
-                    <span className="text-4xl md:text-6xl text-primary-pink">{timeLeft.days}</span>
-                    <span className="text-xs text-rose mt-2 tracking-widest uppercase">Days</span>
+                    <span className="text-3xl sm:text-4xl md:text-6xl text-primary-pink">{timeLeft.days}</span>
+                    <span className="text-[10px] sm:text-xs text-rose mt-2 tracking-widest uppercase">Days</span>
                   </div>
-                  <span className="text-4xl md:text-6xl text-primary-pink/50 animate-pulse">:</span>
+                  <span className="text-3xl sm:text-4xl md:text-6xl text-primary-pink/50 animate-pulse pb-4">:</span>
                   <div className="flex flex-col items-center">
-                    <span className="text-4xl md:text-6xl text-primary-pink">{timeLeft.hours}</span>
-                    <span className="text-xs text-rose mt-2 tracking-widest uppercase">Hours</span>
+                    <span className="text-3xl sm:text-4xl md:text-6xl text-primary-pink">{timeLeft.hours}</span>
+                    <span className="text-[10px] sm:text-xs text-rose mt-2 tracking-widest uppercase">Hours</span>
                   </div>
-                  <span className="text-4xl md:text-6xl text-primary-pink/50 animate-pulse">:</span>
+                  <span className="text-3xl sm:text-4xl md:text-6xl text-primary-pink/50 animate-pulse pb-4">:</span>
                   <div className="flex flex-col items-center">
-                    <span className="text-4xl md:text-6xl text-primary-pink">{timeLeft.minutes}</span>
-                    <span className="text-xs text-rose mt-2 tracking-widest uppercase">Mins</span>
+                    <span className="text-3xl sm:text-4xl md:text-6xl text-primary-pink">{timeLeft.minutes}</span>
+                    <span className="text-[10px] sm:text-xs text-rose mt-2 tracking-widest uppercase">Mins</span>
                   </div>
-                  <span className="text-4xl md:text-6xl text-primary-pink/50 animate-pulse">:</span>
+                  <span className="text-3xl sm:text-4xl md:text-6xl text-primary-pink/50 animate-pulse pb-4">:</span>
                   <div className="flex flex-col items-center">
-                    <span className="text-4xl md:text-6xl text-primary-pink">{timeLeft.seconds}</span>
-                    <span className="text-xs text-rose mt-2 tracking-widest uppercase">Secs</span>
+                    <span className="text-3xl sm:text-4xl md:text-6xl text-primary-pink">{timeLeft.seconds}</span>
+                    <span className="text-[10px] sm:text-xs text-rose mt-2 tracking-widest uppercase">Secs</span>
                   </div>
                 </div>
               </div>

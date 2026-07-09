@@ -62,11 +62,12 @@ export default function Surprise() {
             <div className="absolute inset-0 bg-[url('https://res.cloudinary.com/dhfyfbxiv/image/upload/v1783589899/WhatsApp_Image_2026-07-09_at_3.04.29_PM_1_w6llbh.jpg')] bg-cover bg-center opacity-30 mix-blend-overlay"></div>
             
             <motion.div
-              initial={{ scale: 0.8, y: 50 }}
-              animate={{ scale: 1, y: 0 }}
-              exit={{ scale: 0.8, y: 50 }}
-              className="relative bg-white/10 backdrop-blur-xl border border-primary-pink/40 p-8 md:p-12 rounded-3xl max-w-2xl w-full text-center shadow-[0_0_50px_rgba(255,79,129,0.3)] z-10"
-            >
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            exit={{ scale: 0.8, opacity: 0 }}
+            transition={{ type: "spring", bounce: 0.5 }}
+            className="relative bg-white/10 backdrop-blur-md border border-primary-pink/30 rounded-3xl p-8 md:p-12 max-w-2xl w-full text-center shadow-[0_0_50px_rgba(255,79,129,0.3)] overflow-hidden"
+          >
               <button 
                 onClick={() => setIsOpen(false)}
                 className="absolute top-4 right-4 text-white/50 hover:text-white"
